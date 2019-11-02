@@ -1,0 +1,10 @@
+1. Add ojdbc6.jar to maven project (copy file to project)
+2. Add dependency in pom file (look pom in this project)
+  <dependency>
+			<groupId>com.oracle</groupId>
+			<artifactId>ojdbc</artifactId>
+			<version>6</version>
+			<scope>system</scope>
+			<systemPath>${project.basedir}/lib/ojdbc6.jar</systemPath>
+		</dependency>
+3. Code JDBC Connection as usual
